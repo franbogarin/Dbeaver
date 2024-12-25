@@ -4,10 +4,12 @@ CREATE TABLE IF NOT EXISTS default.objetos (
 	objetos String,
 	cantidad int64,
 	)
-	ENGINE = MergeTree() ORDER BY id
+	ENGINE = MergeTree() ORDER BY id;
 	
 INSERT INTO default.countries (*)
 	VALUES (1, 'Mochila', 2),
 		   (2, 'Moviles', 2),
 		   (3, 'Camisetas', '9'),
-		   (4, 'Pantalones', '6')
+		   (4, 'Pantalones', '6');
+
+SELECT * FROM default.countries;
